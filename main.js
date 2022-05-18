@@ -10,19 +10,16 @@ function load(){
 }
 
 function sum() {
-    let calc = {
-        a : document.getElementById("firstnumber" ).value,
-        b : document.getElementById("secondnumber" ).value,
-    };
-    //   let a, b;
-    //
-    //
-    // a = document.getElementById("firstnumber").value;
-    // b = document.getElementById('secondnumber').value;
+
+    let a, b;
 
 
-    let numerA = parseInt(calc.a);
-    let numerB = parseInt(calc.b);
+    a = document.getElementById("firstnumber").value;
+    b = document.getElementById('secondnumber').value;
+
+
+    let numerA = parseInt(a);
+    let numerB = parseInt(b);
 
     let wynik = numerA + numerB;
 
