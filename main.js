@@ -1,3 +1,5 @@
+console.log("ppp")
+
 function load(){
     document.getElementById("sumaButton");
     sumaButton.addEventListener("click", sum);
@@ -7,6 +9,8 @@ function load(){
     mnozeniaButton.addEventListener("click",mnozenia);
     document.getElementById("dzieleniaButton");
     dzieleniaButton.addEventListener("click", dzielenia);
+    document.getElementById("poteng");
+    poteng.addEventListener("click", potenga)
 }
 
 function sum() {
@@ -94,5 +98,18 @@ function dzielenia() {
 
 
 }
+function potenga() {
 
 
+    let i = 0
+    let wynik = 1;
+    let podstawa = document.getElementById(firstnumber).value;
+    let wykladnik = document.getElementById(secondnumber).value;
+    while (i < wykladnik) {
+
+        wynik = wynik * podstawa;
+        i++;
+    }
+
+    document.getElementById("odpowiedz")
+}
