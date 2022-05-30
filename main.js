@@ -11,6 +11,8 @@ function load(){
     dzieleniaButton.addEventListener("click", dzielenia);
     document.getElementById("poteng");
     poteng.addEventListener("click", potenga)
+    document.getElementById("realSuml");
+    realSuml.addEventListener("click",real());
 }
 
 function sum() {
@@ -31,7 +33,7 @@ function sum() {
 
 
     let result = document.getElementById("odpowiedz");
-    result.innerHTML = "suma " + wynik;
+    result.innerHTML = "suma " + wynik + " You numer "+numerA;
 
 }
 
@@ -112,4 +114,14 @@ function potenga() {
     }
 
     document.getElementById("odpowiedz")
+}
+
+function real() {
+
+    let numer;
+    numer = document.getElementById("youNumer").value;
+    let numerC = parseInt(numer);
+
+    let sum = document.getElementById("free")
+    sum.innerText=numerC;
 }
